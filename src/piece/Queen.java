@@ -23,7 +23,7 @@ public class Queen extends Piece {
             int rowDistance = Math.abs(targetRow - previousRow);
 
             if (colDistance == rowDistance) {
-                return isValidPosition(targetCol, targetRow) && !isDiagonalPathBlocked(targetCol, targetCol);
+                return isValidPosition(targetCol, targetRow) && !isDiagonalPathBlocked(targetCol, targetRow);
             }
         }
         return false;
